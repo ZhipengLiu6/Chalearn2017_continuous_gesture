@@ -27,7 +27,7 @@ by sampling.(All functions have detailed comment in con_process_data.py)
 
 ###Step4.3: Finetune C3D.  c3d_finetuning_len_32_only_hand_depth_map_2stream and c3d_finetuning_len_32_only_hand_face_rgb_2streams can be placed in the directory of example. Set corresponding paths(must be careful). (The finetuned c3d model can be downloaded from https://pan.baidu.com/s/1kUU7oRP)
 
-###Step4.4: Feature extraction. C3d_feature_extraction can be placed in the directory of example. Set corresponding paths(must be careful). (The extracted c3d feature can be downloaded from https://pan.baidu.com/s/1hsOhTFu)
+###Step4.4: Feature extraction. C3d_feature_extraction can be placed in the directory of example. Set corresponding paths(must be careful). (The extracted c3d feature can be downloaded from https://pan.baidu.com/s/1mhZoRaw)
 
 ###Step4.5: Read extracted c3d feature using the code of read_and_fuse_feature_ubuntu_matlab. (the final feature can also be downloaded from https://pan.baidu.com/s/1o7TLg3g)
 
