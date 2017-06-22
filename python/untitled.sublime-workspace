@@ -1,0 +1,1079 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"GivenVideolistfile",
+				"GivenVideolistfile	statement"
+			],
+			[
+				"predict",
+				"predict	statement"
+			],
+			[
+				"faceDetecionPath",
+				"faceDetecionPath	param"
+			],
+			[
+				"tr",
+				"transpose	function"
+			],
+			[
+				"dis",
+				"distance2gray	function"
+			],
+			[
+				"saveResultPath",
+				"saveResultPath	param"
+			],
+			[
+				"ex",
+				"exit	function"
+			],
+			[
+				"opticalFlowPath",
+				"opticalFlowLabelPath	statement"
+			],
+			[
+				"optical",
+				"opticalFlowLabelPath	statement"
+			],
+			[
+				"p",
+				"path	module"
+			],
+			[
+				"sq",
+				"squeeze"
+			],
+			[
+				"def",
+				"deframeconv1"
+			],
+			[
+				"bat",
+				"batch_size"
+			],
+			[
+				"inde",
+				"index_select"
+			],
+			[
+				"n",
+				"nInputs"
+			],
+			[
+				"enc",
+				"enOpconv2"
+			],
+			[
+				"ca",
+				"catConv1"
+			],
+			[
+				"in",
+				"index_select"
+			],
+			[
+				"op",
+				"opConv1"
+			],
+			[
+				"set",
+				"set_trace"
+			],
+			[
+				"cl",
+				"clone"
+			],
+			[
+				"inpu",
+				"input_seqlen"
+			],
+			[
+				"se",
+				"set_trace"
+			],
+			[
+				"crea",
+				"create_dataset"
+			],
+			[
+				"get",
+				"GetRandomBatch"
+			],
+			[
+				"image",
+				"image_size_"
+			],
+			[
+				"output",
+				"output_target	statement"
+			],
+			[
+				"flo",
+				"float32"
+			],
+			[
+				"conv",
+				"conv13	statement"
+			],
+			[
+				"c",
+				"conv11	statement"
+			],
+			[
+				"con",
+				"conv10	statement"
+			],
+			[
+				"hidden",
+				"hidden_state	param"
+			],
+			[
+				"validation",
+				"validationData	statement"
+			],
+			[
+				"batch",
+				"batch_size	statement"
+			],
+			[
+				"plt",
+				"plot_train_process	function"
+			],
+			[
+				"curC",
+				"curc2	statement"
+			],
+			[
+				"deRe",
+				"deResBlock1"
+			],
+			[
+				"deres",
+				"deResBlock2"
+			],
+			[
+				"en",
+				"enResBlock3	statement"
+			],
+			[
+				"e",
+				"enResBlock2	statement"
+			],
+			[
+				"in_channels",
+				"in_channels	param"
+			],
+			[
+				"stride",
+				"stride	param"
+			],
+			[
+				"d",
+				"dilatedConv2	statement"
+			],
+			[
+				"b",
+				"bn5	statement"
+			],
+			[
+				"fil",
+				"filterexpand	statement"
+			],
+			[
+				"dynamic",
+				"dynamic_filter_size	param"
+			],
+			[
+				"filters",
+				"filter_size	None"
+			],
+			[
+				"dyna",
+				"dynamic_filter_size	statement"
+			],
+			[
+				"dy",
+				"dynamic_filter_size	statement"
+			],
+			[
+				"im",
+				"import	keyword"
+			],
+			[
+				"fea",
+				"feature_dim"
+			],
+			[
+				"load",
+				"load_data"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"oneS",
+				"oneSenHog"
+			],
+			[
+				"seq",
+				"sequence_temp"
+			],
+			[
+				"la",
+				"label_temp"
+			],
+			[
+				"s",
+				"start"
+			],
+			[
+				"testc",
+				"test_cvID_this"
+			],
+			[
+				"sync",
+				"synConGPath"
+			],
+			[
+				"right",
+				"rightMEHogPath"
+			],
+			[
+				"half",
+				"halfLen"
+			],
+			[
+				"Iso",
+				"IsoSignNames"
+			],
+			[
+				"rig",
+				"rightfile"
+			],
+			[
+				"oneend",
+				"oneEnd_left_img"
+			],
+			[
+				"oneba",
+				"oneBatchLeft"
+			],
+			[
+				"end_batch",
+				"end_batch_left_img"
+			],
+			[
+				"SS",
+				"SSIMCeriterion"
+			],
+			[
+				"rea",
+				"readMeSynConGHog_Label"
+			],
+			[
+				"use",
+				"useID"
+			],
+			[
+				"list",
+				"listID"
+			],
+			[
+				"Isex",
+				"IsExistErrInIso"
+			],
+			[
+				"isw",
+				"IsoWordID"
+			],
+			[
+				"map",
+				"map370To1000"
+			],
+			[
+				"data",
+				"DatasetID"
+			],
+			[
+				"Isow",
+				"IsoWord"
+			],
+			[
+				"start_ba",
+				"start_batch_right_img"
+			],
+			[
+				"start_bat",
+				"start_batch_right_img"
+			],
+			[
+				"end_ba",
+				"end_batch_right_img"
+			],
+			[
+				"ba",
+				"batchNFrame"
+			],
+			[
+				"tmp",
+				"tmpNME"
+			],
+			[
+				"bac",
+				"batchNFrame"
+			],
+			[
+				"img",
+				"imgContent"
+			],
+			[
+				"st",
+				"startx"
+			],
+			[
+				"labelpa",
+				"LabelPath"
+			],
+			[
+				"ME",
+				"MEimgsfilePath"
+			],
+			[
+				"outp",
+				"outputLeft"
+			],
+			[
+				"sta",
+				"start_batch_right_img"
+			],
+			[
+				"nex",
+				"nextRightimgData"
+			],
+			[
+				"ones",
+				"oneStart_left_img"
+			],
+			[
+				"filei",
+				"fileID"
+			],
+			[
+				"file",
+				"fileIDData"
+			],
+			[
+				"posit",
+				"positionData"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"pos",
+				"positionTemp"
+			],
+			[
+				"pso",
+				"positionTem"
+			],
+			[
+				"nelf",
+				"neLefty"
+			],
+			[
+				"prele",
+				"preLeftx"
+			],
+			[
+				"preR",
+				"preRighty"
+			],
+			[
+				"pre",
+				"preRighty"
+			],
+			[
+				"preL",
+				"preLeftx"
+			],
+			[
+				"loa",
+				"loadOneimg"
+			],
+			[
+				"left",
+				"lefty"
+			],
+			[
+				"le",
+				"leftx"
+			],
+			[
+				"senID",
+				"senIDFilePath"
+			],
+			[
+				"senIF",
+				"senIDFilePath"
+			],
+			[
+				"table",
+				"table.sort	table.sort"
+			],
+			[
+				"true",
+				"trueIsoId"
+			],
+			[
+				"posi",
+				"positionPath"
+			],
+			[
+				"prePs",
+				"prePositionPath"
+			],
+			[
+				"syne",
+				"synthetise"
+			],
+			[
+				"sY",
+				"SynConGPath"
+			],
+			[
+				"ConG",
+				"ConGpath"
+			],
+			[
+				"synth",
+				"synthtise_label"
+			],
+			[
+				"senId",
+				"senID"
+			],
+			[
+				"synte",
+				"synthetise"
+			],
+			[
+				"getIs",
+				"getUseFulIDin370In250"
+			],
+			[
+				"ISo",
+				"IsoWord"
+			],
+			[
+				"subIs",
+				"subIsoGroupWord"
+			],
+			[
+				"No",
+				"NoKeyFrame"
+			],
+			[
+				"sub4Hog",
+				"sub4HogPath"
+			],
+			[
+				"Tre",
+				"True"
+			],
+			[
+				"sub3ma",
+				"sub3maskPath"
+			],
+			[
+				"pa",
+				"parametersG_ori"
+			],
+			[
+				"pkl",
+				"pklfile"
+			],
+			[
+				"dic",
+				"dic"
+			],
+			[
+				"idt",
+				"idIterm"
+			],
+			[
+				"idT",
+				"idIterm"
+			],
+			[
+				"VGG1",
+				"VGG19_caffemodel"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "svm_c3d.py",
+			"settings":
+			{
+				"buffer_size": 7669,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package",
+		"selected_items":
+		[
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				" install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"https://packagecontrol.io/installation#st3",
+			" https://packagecontrol.io/installation#st3",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/zhipengliu/project/ChaLearn2016/CodeSubmission/ConG/ConG_RNN_LSTMcode/generate_ConG_final_sub.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/python/process_data.py",
+		"/home/zhipengliu/project/ChaLearn2016/CodeSubmission/ConG/ConG_RNN_LSTMcode/read_chaLearnhog_data.py",
+		"/home/zhipengliu/project/ChaLearn2016/CodeSubmission/ConG/ConG_RNN_LSTMcode/RNN_LSTM_ContinuousG.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/original/generateContinuousGesture_sub.py",
+		"/home/zhipengliu/ChaLearn2017/ConG/coda/generateContinuousGesture_sub.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/original/generate_Iso_finall_sub.py",
+		"/home/zhipengliu/project/ChaLearn2016/CodeSubmission/Iso/IsoAllcode/RNN_LSTMcode/generate_Iso_finall_sub.py",
+		"/home/zhipengliu/ChaLearn2017/related_work/SVM_classification/python/svm_c3d.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/python/svm_c3d.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/highway/multi_frame_prediction/highway_dfn_prednet_v7_encoder1_conv_recurrent_has_posi_nega/datasets/dataset_highwayDriving.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/process_data (复件).py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/mirrorData.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/c3dsetingfile.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/set_image_input_list.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/get_crop_hand_in_image.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/get_crop_face_hand_in_image.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/process_data.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/CvtVideoToImage.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/iso_final_code/process_data/set_c3d_output_list.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/read_chaLearnhog_data.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/read_chaLearn_data.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/read_data.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/original/readTxt.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/original/read_data.py",
+		"/media/zhipengliu/work/ubuntuBackup/DMPnet/kitti/oneframe_prediction/kitty_dfn_prednet_v1_recurrent_encoder_has_posi_nega64x64/measure_kitti.py",
+		"/media/zhipengliu/work/ubuntuBackup/DMPnet/kitti/oneframe_prediction/kitty_dfn_prednet_v1_recurrent_encoder_has_posi_nega64x64/pytorch_train_original.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/prednet-master/kitti_evaluate.py",
+		"/media/zhipengliu/work/ubuntuBackup/DMPnet/kitti/oneframe_prediction/kitty_dfn_prednet_v1_recurrent_encoder_has_posi_nega64x64/processData.py",
+		"/media/zhipengliu/work/ubuntuBackup/DMPnet/kitti/oneframe_prediction/kitty_dfn_prednet_v1_recurrent_encoder_has_posi_nega64x64/pytorch_experiment_highway_dfn.py",
+		"/media/zhipengliu/work/ubuntuBackup/DMPnet/kitti/multi_step_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /pytorch_experiment_highway_dfn.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn_prednet_v4_CLSTM_recurrent_encoder_has_posi_nega64x64_no_error/pytorch_experiment_highway_dfn.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn_prednet_v2_SRNN_recurrent_encoder_has_posi_nega64x64 /pytorch_experiment_highway_dfn.py",
+		"/media/zhipengliu/work/ubuntuBackup/DMPnet/kitti/oneframe_prediction/kitty_dfn_prednet_v1_recurrent_encoder_has_posi_nega64x64/pytorch_analyse_trained_original.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/original/read_chaLearn_data.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/original/readHandHog.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/original/read_chaLearnhog_data.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn_prednet_v2_SRNN_recurrent_encoder_has_posi_nega64x64 /models/pytorch_model_bouncingMnistOriginal.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/dfn-master/models/model_bouncingMnistOriginal.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/prednet-master/prednet.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/set_image_input_list.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/set_c3d_output_list.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/mirrorData.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/CvtVideoToImage.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/CvtOpticalFlow2TrainingType.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/CvtopticalFlow2ThreeChannelFlow_z.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/get_crop_hand_in_image.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/CvtOriData2LabelData.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/unification_frame.py",
+		"/home/zhipengliu/ChaLearn2017/related_work/SVM_classification/python/plot_iris.py",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D/C3D-v1.0/examples/c3d_feature_extraction/prototxt/c3d_Chalearn_iso_train_feature_extractor_frm.prototxt",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D/C3D-v1.0/examples/c3d_feature_extraction/c3d_Chalearn2017_iso_train_feature_extraction_frm.sh",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/CvtImage2Video.py",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D/C3D-v1.0/src/caffe/layers/data_layer.cpp",
+		"/home/zhipengliu/zhipengliu/ME/related work/dfn/visualize_result.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/getOpticalFlow.py",
+		"/home/zhipengliu/ChaLearn2017/tmp/dense_flow-master/denseFlow_gpu.cpp",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/highway/oneframe_prediction/highway_dfn_prednet_v7_recurrent_encoder3_has_posi_nega/datasets/dataset_highwayDriving.py",
+		"/media/zhipengliu/zhipeng_NHCI/backup_liu/project/time_lapse/two_stack_generator_code/data.lua",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/GetSubfileName.py",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/c3dsetingfile.py",
+		"/home/zhipengliu/tool_package/libsvm-3.22/python/svmutil.py",
+		"/home/zhipengliu/tool_package/libsvm-3.22/python/svm.py",
+		"/home/zhipengliu/tool_package/libsvm-3.22/svm.cpp",
+		"/home/zhipengliu/tool_package/libsvm-3.22/svm-train.c",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D-master/tools/compute_volume_mean.cpp",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D-master/tools/compute_volume_mean_from_list.cpp",
+		"/home/zhipengliu/ChaLearn2017/related_work/dense_flow_cpu/denseFlow.cpp",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D/C3D-v1.0/examples/c3d_feature_extraction/extract_C3D_feature.py",
+		"/home/zhipengliu/下载/tensor_tutorial.py",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D-master/src/caffe/solver.cpp",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D-master/src/caffe/net.cpp",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D-master/tools/finetune_net.cpp",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/CvtDepth2TrainingType.py",
+		"/home/zhipengliu/C3D_list/list_make.py",
+		"/home/zhipengliu/zhipengliu/OtherProject/C3D-master/src/caffe/layers/video_data_layer.cpp",
+		"/home/zhipengliu/ChaLearn2017/IsoGesture/process_data/getOpticalFlow_cpu.py",
+		"/media/zhipengliu/work/research/汉杰师兄工作交接/5_LSTM连续手语识别/代码/keras_test/a_sign_sentence_test.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/read_ISO_data.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/CvtVideoToImage.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/set_image_input_list.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/c3dsetingfile.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn/pytorch_experiment_highway_dfn.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn/measure_kitti.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn/datasets/dataset_highwayDriving.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /measure_kitti.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/generateContinuousGesture_sub.py",
+		"/home/zhipengliu/project/ChaLearn2016/IsoAllcode/RNN_LSTMcode/generate_Iso_finall_sub.py",
+		"/home/zhipengliu/zhipengliu/ME/preprocessData/CvtVideoToImage.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/originalIso/generate_Iso_finall_sub.py",
+		"/home/zhipengliu/project/ChaLearn2016/code/originalIso/RGB_Depth_LSTM.py",
+		"/home/zhipengliu/project/ChaLearn2016/CodeSubmission/Iso/IsoAllcode/RNN_LSTMcode/RGB_Depth_LSTM.py",
+		"/home/zhipengliu/project/ChaLearn2016/ConGCompetetion_running/CNN_LSTM/generate_Iso_finall_sub.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn_prednet_v4_CLSTM_recurrent_encoder_has_posi_nega_no_error_64x64/pytorch_experiment_highway_dfn.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/highway/multi_frame_prediction/highway_dfn_prednet_v7_encoder1_conv_recurrent_has_posi_nega/pytorch_experiment_highway_dfn.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn_prednet_v2_SRNN_recurrent_encoder_has_posi_nega64x64 /measure_kitti.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /measure_kitti.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/prednet-master/measure_kitti_prednet.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/prednet-master/data_utils.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn/measure_kitti.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn/pytorch_train_original.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn/pytorch_experiment_highway_dfn.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn/datasets/dataset_highwayDriving.py",
+		"/home/zhipengliu/zhipengliu/ME/related work/prednet-master/highway_data.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/dfn_me/kitty_dfn_prednet_v11_recurrent_encoder_has_posi_nega64x64/processData.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn_prednet_v4_CLSTM_recurrent_encoder_has_posi_nega_no_error_64x64/measure_kitti.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn/pytorch_train_original.py",
+		"/home/zhipengliu/zhipengliu/ME/related work/prednet-master/kitti_evaluate.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/dfn-master/analyse_trained.py",
+		"/home/zhipengliu/zhipengliu/ME/related work/prednet-master/measure_kitti_prednet.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/highway/multi_frame_prediction/highway_dfn_prednet_v7_encoder1_conv_recurrent_has_posi_nega/measure_highway.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/dfn-master/measure_dfn_highway.py",
+		"/home/zhipengliu/zhipengliu/video prediction/related work/prednet-master/measure_kitti.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /pytorch_experiment_highway_dfn.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /pytorch_train_original.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn_prednet_v2_SRNN_recurrent_encoder_has_posi_nega64x64 /pytorch_train_original.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /pytorch_validation_highway.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /pytorch_train_original.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /pytorch_experiment_highway_dfn.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn_prednet_v3_CLSTM_recurrent_encoder_has_posi_nega64x64 /processData.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn/utils/pytorch_helperFunctions.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/highway/oneframe_prediction/highway_dfn_prednet_v8_recurrent_encoder1_has_posi_nega_new_memory/pytorch_validation_highway.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/oneframe_prediction/kitti_dfn/measure.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/highway/multi_frame_prediction/highway_dfn_prednet_v9_encoder3_CLSTM_has_posi_nega_no_error/pytorch_train_original.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/highway/multi_frame_prediction/highway_dfn_prednet_v9_encoder3_CLSTM_has_posi_nega_no_error/pytorch_validation_highway.py",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/highway/multi_frame_prediction/highway_dfn_prednet_v9_encoder3_CLSTM_has_posi_nega_no_error/models/pytorch_model_highway.py",
+		"/home/zhipengliu/zhipengliu/ME/related work/VideoPredictionICLR2016-master/image_error_measures.lua",
+		"/home/zhipengliu/zhipengliu/video prediction/memory_prednet/kitti/multi_frame_prediction/kitti_dfn_prednet_v6_ElanSRNN_recurrent_encoder_has_posi_nega64x64/pytorch_train_original.py"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nlabel",
+			"testvideolistfile",
+			"IsInlist",
+			"The fate of memory",
+			"readTEFaceFileliu",
+			"detectionFile",
+			"detection",
+			"detec",
+			"readFaceFileyin",
+			"pdb",
+			"scio",
+			"pdb",
+			"load",
+			"CopyTrainedLayersFrom",
+			"readlines",
+			"ReadVideoToVolumeDatum",
+			"start_frm_list_",
+			"sampling_rate",
+			"tranpose",
+			"ssim",
+			"compute_ssim",
+			"oneErr",
+			"output",
+			"N_seq",
+			"X_test",
+			"pdb",
+			"states",
+			"step",
+			"prepareDedw",
+			"use_bias",
+			"pdb",
+			"pixel_max",
+			"upsample",
+			"BatchNormalization",
+			"extrap_start_time",
+			"pdb",
+			"val_file",
+			"train_sources",
+			"subprocess",
+			"Model",
+			"RNNDfn_highway",
+			"Model",
+			"frameCriterion",
+			"prednet",
+			"PredNet",
+			"states",
+			"step",
+			"states",
+			"ModelMulti_task",
+			"RNNDfn_highway",
+			"validLoss",
+			"xv",
+			"RNNLader_dfn",
+			"buffer_len",
+			"pdb",
+			"cat",
+			"seed",
+			"RNNDfn",
+			"1",
+			"seed",
+			"torch",
+			"drawnow",
+			"RNNLader",
+			"RNNBaseLine",
+			"AffineGridGeneratorOpticalFlow2D",
+			"model_bouncingMnistLSTM",
+			"pytorch_model_bouncingMnistLSTM",
+			"a3",
+			"cutorch",
+			"h5",
+			"random",
+			"loss",
+			"rnn",
+			"ModelLader_baseline",
+			"RNNLader_dfn_baseline",
+			"ModelLader_baseline",
+			"Dfn",
+			"validation",
+			"/home/zhipengliu/zhipengliu/video prediction/related work/VLN/VLN_original/datasets/moving_mnist/mnist.h5",
+			"dh",
+			"preTrainNet",
+			"name",
+			"100",
+			"lader",
+			"RNNDfn_Res",
+			"conv3x3",
+			"sigmoid",
+			"pdb",
+			"view",
+			"conv14",
+			"conv15",
+			"conv14",
+			"seed",
+			"verbose",
+			"pdb",
+			"LongTensor",
+			"options",
+			"option",
+			"getDefaultOptions",
+			"nLayersWithParams",
+			"nc",
+			"npx",
+			"nextH",
+			"out",
+			"nextC",
+			"pdb",
+			"round",
+			"pdb",
+			"ElemwiseSumLayer",
+			"keepdims",
+			"pred_filter",
+			"shared",
+			"net",
+			"layers",
+			"get_all_params",
+			"momentum",
+			"rmsprop",
+			"r",
+			"rms",
+			"adam",
+			"lasagne",
+			"lassagne",
+			"update",
+			"get_all_layers",
+			"set_all_param_values",
+			"keras_test",
+			"load_model",
+			"begin loading data"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "svm_c3d.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4917,
+								4917
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2376.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 298.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 142.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 160.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 521.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
