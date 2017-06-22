@@ -1,0 +1,30 @@
+﻿生成启动时间为 2017/6/21 22:06:25。
+     1>项目“E:\Projects\2017ChaLearn\ReleaseCode\Iso\Detection\CalibrationDepthVideo\CalibrationDepthVideo.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Release\CalibrationDepthVideo.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Release\CalibrationDepthVideo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>main.cpp(71): warning C4018: “<”: 有符号/无符号不匹配
+     1>main.cpp(78): warning C4018: “<”: 有符号/无符号不匹配
+     1>main.cpp(84): warning C4018: “<”: 有符号/无符号不匹配
+     1>main.cpp(230): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>main.cpp(231): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>main.cpp(246): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>main.cpp(247): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Projects\2017ChaLearn\ReleaseCode\Iso\Detection\CalibrationDepthVideo\Release\CalibrationDepthVideo.exe" /NOLOGO opencv_calib3d248.lib opencv_contrib248.lib opencv_core248.lib opencv_features2d248.lib opencv_flann248.lib opencv_gpu248.lib opencv_highgui248.lib opencv_imgproc248.lib opencv_legacy248.lib opencv_ml248.lib opencv_objdetect248.lib opencv_ts248.lib opencv_video248.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"E:\Projects\2017ChaLearn\ReleaseCode\Iso\Detection\CalibrationDepthVideo\Release\CalibrationDepthVideo.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Projects\2017ChaLearn\ReleaseCode\Iso\Detection\CalibrationDepthVideo\Release\CalibrationDepthVideo.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         正在生成代码
+         已完成代码的生成
+         CalibrationDepthVideo.vcxproj -> E:\Projects\2017ChaLearn\ReleaseCode\Iso\Detection\CalibrationDepthVideo\Release\CalibrationDepthVideo.exe
+       FinalizeBuildStatus:
+         正在删除文件“Release\CalibrationDepthVideo.unsuccessfulbuild”。
+         正在对“Release\CalibrationDepthVideo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\Projects\2017ChaLearn\ReleaseCode\Iso\Detection\CalibrationDepthVideo\CalibrationDepthVideo.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.65
