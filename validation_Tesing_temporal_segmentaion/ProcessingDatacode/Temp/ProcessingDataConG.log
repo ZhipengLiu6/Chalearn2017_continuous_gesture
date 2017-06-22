@@ -1,0 +1,58 @@
+﻿生成启动时间为 2017/6/22 20:33:50。
+     1>项目“C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\ProcessingDataConG\ProcessingDataConG.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Temp\\" /Fd"C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Temp\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ProcessingDataConG.cpp
+         ProcessingDataConG.cpp
+     1>c:\zhipeng\ict_nhci_continuousgesturecode\conallcodes\processingdatacode\include\opensource\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+     1>ProcessingDataConG.cpp(438): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(451): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(439): warning C4101: “tmp”: 未引用的局部变量
+     1>ProcessingDataConG.cpp(542): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(552): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(997): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(1438): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(1484): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(1507): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(1727): warning C4018: “<”: 有符号/无符号不匹配
+     1>ProcessingDataConG.cpp(1815): warning C4018: “<”: 有符号/无符号不匹配
+     1>ProcessingDataConG.cpp(1888): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>ProcessingDataConG.cpp(1889): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>ProcessingDataConG.cpp(1904): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>ProcessingDataConG.cpp(1905): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>ProcessingDataConG.cpp(1921): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>ProcessingDataConG.cpp(1922): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>ProcessingDataConG.cpp(1937): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>ProcessingDataConG.cpp(1938): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>ProcessingDataConG.cpp(1974): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(1979): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 参见“sprintf”的声明
+     1>ProcessingDataConG.cpp(1991): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(311) : 参见“sscanf”的声明
+     1>ProcessingDataConG.cpp(1997): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 参见“sprintf”的声明
+     1>ProcessingDataConG.cpp(1975): warning C4101: “tmp”: 未引用的局部变量
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Bin\ProcessingDataConG.exe" /INCREMENTAL:NO /NOLOGO opencv_calib3d248.lib opencv_contrib248.lib opencv_core248.lib opencv_features2d248.lib opencv_flann248.lib opencv_gpu248.lib opencv_highgui248.lib opencv_imgproc248.lib opencv_legacy248.lib opencv_ml248.lib opencv_objdetect248.lib opencv_ts248.lib opencv_video248.lib VIPL_SDK_FD_NODOG.lib /NODEFAULTLIB:"Nafxcw.lib Libcmt.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Bin\ProcessingDataConG.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Bin\ProcessingDataConG.lib" /MACHINE:X86 /SAFESEH C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Temp\connexe.obj
+         C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Temp\PreProcessGestureData.obj
+         C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Temp\ProcessingDataConG.obj
+         C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Temp\stdafx.obj
+         正在生成代码
+         已完成代码的生成
+         ProcessingDataConG.vcxproj -> C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\\Bin\ProcessingDataConG.exe
+     1>已完成生成项目“C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\ProcessingDatacode\ProcessingDataConG\ProcessingDataConG.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.17

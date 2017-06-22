@@ -1,0 +1,23 @@
+﻿生成启动时间为 2016/7/20 9:32:07。
+     1>项目“F:\competition\ProcessingDataConG\ProcessingDataConG\ProcessingDataConG\ProcessingDataConG.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt connexe.cpp PreProcessGestureData.cpp ProcessingDataConG.cpp stdafx.cpp
+         stdafx.cpp
+         ProcessingDataConG.cpp
+         PreProcessGestureData.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>f:\competition\processingdatacong\processingdatacong\processingdatacong\preprocessgesturedata.cpp(17): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\competition\processingdatacong\processingdatacong\processingdatacong\preprocessgesturedata.cpp(21): warning C4018: “<”: 有符号/无符号不匹配
+         connexe.cpp
+         正在生成代码...
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\competition\ProcessingDataConG\ProcessingDataConG\Debug\ProcessingDataConG.exe" /INCREMENTAL /NOLOGO opencv_calib3d242.lib opencv_contrib242.lib opencv_core242.lib opencv_features2d242.lib opencv_flann242.lib opencv_gpu242.lib opencv_highgui242.lib opencv_imgproc242.lib opencv_legacy242.lib opencv_ml242.lib opencv_objdetect242.lib opencv_ts242.lib opencv_video242.lib VIPL_SDK_FD_NODOG.lib /NODEFAULTLIB:"Nafxcw.lib Libcmt.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"F:\competition\ProcessingDataConG\ProcessingDataConG\Debug\ProcessingDataConG.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\competition\ProcessingDataConG\ProcessingDataConG\Debug\ProcessingDataConG.lib" /MACHINE:X86 Debug\connexe.obj
+         Debug\PreProcessGestureData.obj
+         Debug\ProcessingDataConG.obj
+         Debug\stdafx.obj
+         ProcessingDataConG.vcxproj -> F:\competition\ProcessingDataConG\ProcessingDataConG\Debug\ProcessingDataConG.exe
+     1>已完成生成项目“F:\competition\ProcessingDataConG\ProcessingDataConG\ProcessingDataConG\ProcessingDataConG.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.51
