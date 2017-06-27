@@ -1,9 +1,7 @@
-function [ ans ] = readC3dFeature( sumpath, savePath, nsample, istrain )
+function [ ans ] = readC3dFeature( sumpath, savePath, nsample )
 %UNTITLED2 Summary of this function goes here
-%   read continuous gesture feature data getting from c3d finetuned model
-%   istrain: 1 : training dataset 2: validation or testing dataset 
+%   read gesture feature data getting from c3d finetuned model
 %sumpath = '/home/zhipengliu/ChaLearn2017/IsoGesture/feature/c3d_only_hand/validation/RGB_vgg_on_sports';
-
 Files = dir(fullfile(sumpath));
 lengthFile = length(Files); 
 start = 3;
@@ -26,11 +24,8 @@ for i = start  : lengthFile%%label video
         nv = nv + 1;
         videoname = labelvideofile(j).name;
         videopath = [subfilepath, '/', videoname];
-        if istrain == 1
-            oneVideoId = (i - start  + 1) * 1000  +  str2double(videoname(1, 4));
-        else
-            oneVideoId = str2double(videoname);
-        end          
+        oneVideoId = str2double(videoname(1, 3 : size(videoname, 2)));
+        
         featurefile = dir(fullfile(videopath));
         featureLength = length(featurefile);
         

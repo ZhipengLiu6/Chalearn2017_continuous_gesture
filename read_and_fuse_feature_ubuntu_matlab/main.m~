@@ -13,8 +13,8 @@ rgbtrainFeaturePath = 'iso_train_only_hand_face_rgb_2stream.mat';
 savetrainfile = 'fusion_train.mat';
 
 
-ntrain = 30441; %the number of training sample
-nvalid = 9113; %the number of segmented validation sample
+ntrain = 30441; %the number of valid training sample
+nvalid = 9113; %the number of valid validation sample(it also can be set 6271, the numer of testing sample)
 
 readC3dFeature(rgbtrainC3dPath,  rgbtrainFeaturePath, ntrain);
 readC3dFeature(depthtrainC3dPath, depthtrainFeaturePath, ntrain);
