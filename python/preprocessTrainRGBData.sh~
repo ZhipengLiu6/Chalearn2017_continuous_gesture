@@ -1,0 +1,1 @@
+python con_process_data.py --oriRGBVideoPath data/ConGD_phase_1_RGB/convertContinousToIsoGestrueTrain_new --faceDetecionPath data/ConGfacePosition/RGBConGTrainDataFacePosition --handDetectionFile data/handDetection/convertContinousToIsoGestrueTrain_new --isRGB 1 --isTrain 1

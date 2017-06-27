@@ -9,7 +9,7 @@ import os
 import subprocess
 from GetSubfileName import *
 import pdb
-
+import argparse
 def cvtConGSegTestVideo2Labeled(segVideoFile = None, labeledFile = None, isVideo = 2):
     if not os.path.exists(labeledFile):
         strcmd = "mkdir -p " + labeledFile
@@ -33,10 +33,17 @@ def cvtConGSegTestVideo2Labeled(segVideoFile = None, labeledFile = None, isVideo
                 elif isVideo == 1:
                     newVideoName = "%012d.avi" % (videoid)
                 dstPath = oneSaveLabeledFile + "/" + newVideoName
-                strcp = "mv " + oneSmallVideoPath + " " + dstPath
+                strcp = "cp " + oneSmallVideoPath + " " + oneSaveLabeledFile
+                strmv = "mv " + oneSaveLabeledFile + "/"  + oneSamllVideo  + " " + dstPath
                 subprocess.call(strcp, shell = True)
+                subprocess.call(strmv, shell = True)
 
 if __name__ == '__main__':
-    segVideoFile = "/media/zhipengliu/zhipeng_NHCI/ChaLearn2017/conG/2017/seg_valid_handDetection_2stream"
-    labeledFile = "/home/zhipengliu/ChaLearn2017/ConG/validation/video/labeld_handDetectionSegValid"
-    cvtConGSegTestVideo2Labeled(segVideoFile = segVideoFile, labeledFile = labeledFile, isVideo = 2)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--segVideoFile', default='data/seg_valid_depth_2stream', type=str, help = 'the path to temporal segmentation file')
+    parser.add_argument('--labeledFile', default='data/ConGD_phase_2_aligned_depth/temporal_segmentation_valid', type=str, help = 'the path to saved file')
+    parser.add_argument('--isVideo', default=1, type=int, help = 'the type of data, 1: video, 2: txt file')
+    args = parser.parse_args()
+    segVideoFile = args.segVideoFile
+    labeledFile = args.labeledFile
+    cvtConGSegTestVideo2Labeled(segVideoFile = segVideoFile, labeledFile = labeledFile, isVideo = args.isVideo)

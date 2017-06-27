@@ -1,0 +1,1 @@
+python con_process_data.py --oriRGBVideoPath data/ConGD_phase_2_RGB/temporal_segmentation_valid --faceDetecionPath data/ConGfacePosition/RGBConGValidDataFacePosition --handDetectionFile data/handDetection/temporal_segmentation_valid --isRGB 1 --isTrain 2

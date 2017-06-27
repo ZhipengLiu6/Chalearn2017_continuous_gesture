@@ -14,7 +14,7 @@ import subprocess
 import time
 import cv2
 from GetSubfileName import *
-
+import argparse
 
 class isoProcess(object):
     """define isolated gesture data preprocessing class, it can generate input and output file list"""
@@ -86,7 +86,7 @@ class isoProcess(object):
     @pathVideo: path to video
     @pathImageJpg: path to new generated image file
     """
-    def cvtVideo2Img(self, pathVideo = None, pathImageJpg = None):
+    def cvtVideo2Img(self, pathVideo = None, pathImageJpg = None, isRGB = 1):
         timestart = time.time()
         subRGB = GetSubfileName(pathVideo)
         if not os.path.exists(pathImageJpg):
@@ -104,7 +104,14 @@ class isoProcess(object):
             nSentence = len(subsubfile)
             for j in range(nSentence):
                 videostr = subsubfile[j]
+                if isRGB == 1:
+                    if videostr[-5] == 'K':
+                        continue
+                else:
+                    if videostr[-5] == 'M':
+                        continue
                 oneMefile = subRGBfilePath + "/" + videostr
+
                 print "sentence: "  + videostr
                 oneMeSaveFile = oneLabelImagePath + "/" + videostr[ 0 :  -4]
                 if os.path.exists(oneMeSaveFile) == False:
@@ -265,6 +272,7 @@ class isoProcess(object):
         labelNameSets = GetSubfileName(oriImgFile)
         start = time.time()
         idVideo, allfaceX, allfaceY = self.readFaceFileCon(filepath = faceDetecionPath, isValid = isValid)
+        # pdb.set_trace()
         dic_id2line = {}
         numVideo = idVideo.shape[0]
         for i in range(numVideo):
@@ -284,8 +292,9 @@ class isoProcess(object):
                 print(labelName, videoNameSets[i])
                 if isValid == 2:
                     OneVideoId =int(labelName) * 10000 + int(videoNameSets[i][: 4])
+
                 elif isValid == 1:
-                    OneVideoId = int(int(videoNameSets[i]) / 100)
+                    OneVideoId = int(int(videoNameSets[i][:]) / 100)
                 else:
                     print("the parameter of isValid is wrong set")
                     sys.exit()
@@ -301,6 +310,7 @@ class isoProcess(object):
                 else:#if there is not face detection result
                     faceCX = width / 2
                     faceCY = height / 2
+                    faceSize = 10
                     faceRect = (faceCX - faceSize, faceCY - faceSize, faceCX + faceSize, faceCY + faceSize)
                 if not os.path.exists(saveVideoPath):
                     os.mkdir(saveVideoPath)
@@ -329,13 +339,15 @@ class isoProcess(object):
     @inputfilename: input image list file for c3d
     """
     def set_image_list(self, pathImageJpg = None, inputfilename = None):
-        nlabel = self.nlabel
+
         clipLength = self.clipLength
         timestart = time.time()
         subRGB = GetSubfileName(pathImageJpg)
+        nlabel = len(subRGB)
         featureCount = 0
         inputfilestream = open(inputfilename, 'w+')
         cnt = 0
+        
         for i in range(nlabel):
             subfileName = subRGB[i]
             print "---------------" + subfileName + "----------------"
@@ -360,7 +372,7 @@ class isoProcess(object):
                     frameStart = k
                     cnt = cnt + 1
                     print(cnt)
-                    inputsetting = oneVideoPath + "/ " + str(frameStart) + " " + str(i) + "\n"
+                    inputsetting = os.getcwd() + "/" +  oneVideoPath + "/ " + str(frameStart) + " " + str(i) + "\n"
                     inputfilestream.writelines(inputsetting)
         inputfilestream.close() 
     """
@@ -370,7 +382,7 @@ class isoProcess(object):
     @outputfilename: output image list file for c3d
     """
     def set_c3d_output_list(self, pathImageJpg = None, pathC3Dfeature = None, outputfilename = None):
-        nlabel = self.nlabel
+
         clipLength = self.clipLength
         timestart = time.time()
         if not os.path.exists(pathC3Dfeature):
@@ -378,8 +390,10 @@ class isoProcess(object):
             subprocess.call(strcmd, shell = True)
 
         subRGB = GetSubfileName(pathImageJpg)
+        nlabel = len(subRGB)
         outputfilestream = open(outputfilename, 'w+')
         cnt = 0
+        # pdb.set_trace()
         for i in range(nlabel):
             subfileName = subRGB[i]
             print(subfileName)
@@ -390,7 +404,7 @@ class isoProcess(object):
                 os.mkdir(outputLabelfile)
             DTlRGBfileName = GetSubfileName(subRGBfilePath)
             labelVideoSize = len(DTlRGBfileName)
-
+            # pdb.set_trace()
             for j in range(labelVideoSize):
                 videostr = DTlRGBfileName[j]
                 # if videostr[0] == 'h':
@@ -404,12 +418,13 @@ class isoProcess(object):
                 imagelist = GetSubfileName(oneVideoPath)
                 nframe = len(imagelist)
                 for k in range(1, nframe + 1, clipLength):
+                    # pdb.set_trace()
                     if k + clipLength  - 1 > nframe:
                         break
                     frameStart = k
                     cnt = cnt + 1
                     # print(cnt)
-                    outputsetting =   "%s/%06d\n" % (outputVideoPath, frameStart)
+                    outputsetting =   "%s/%s/%06d\n" % (os.getcwd(),outputVideoPath, frameStart)
                     outputfilestream.writelines(outputsetting)
         outputfilestream.close()
     """
@@ -464,56 +479,147 @@ class isoProcess(object):
                     subprocess.call(strMVcmd, shell = True)
                 # pdb.set_trace()
         print(cnt_w)
-if __name__ == '__main__':
-    #-----------------------------------------set file path----------------------------------------------#
-    RGBlabeVideofile = "/home/myc/liuzhipeng/Chalearn/ConG/data/validation/video/congSegValid_2017/labeld_rgbSegValid"
-    depthlabelVideofile = "/home/myc/liuzhipeng/Chalearn/ConG/data/validation/video/congSegValid_2017/labeld_depthSegValid"
+def checkPath(path = None):
+     if not os.path.exists(path):
+        strcmd = "mkdir -p " + path
+        subprocess.call(strcmd, shell = True)
+def trainMain(oriVideoPath = None, handDetectionFile = None, faceDetecionPath = None, isRGB = 1):
     timestart = time.time()
-    #--------------------------------------------------------------------------------------------------------#
-    ##convert origianl video to labeled video
-    ##RGB video
     preprocess = isoProcess()
 
 
-    #--------------------------------------------------------------------------------------------------------#
-    ##convert labeld video to image
-    oriRGBImgFile = "/home/myc/liuzhipeng/Chalearn/ConG/data/validation/ori_img/ConGSegvalid_rgb_ori_img"
-    oriDepthImgFile = "/home/myc/liuzhipeng/Chalearn/ConG/data/validation/ori_img/ConGSegvalid_depth_ori_img"
-    ##RGB 
-    preprocess.cvtVideo2Img(pathVideo = RGBlabeVideofile, pathImageJpg = oriRGBImgFile)
-    #depth
-    preprocess.cvtVideo2Img(pathVideo = depthlabelVideofile, pathImageJpg = oriDepthImgFile)
+    ##convert labeled video to images
+    if isRGB == 1:
+        oriImgFile = "data/train/origianl_img/rgb"
+    else:
+        oriImgFile = "data/train/origianl_img/depth"
+    checkPath(oriImgFile)
+    preprocess.cvtVideo2Img(pathVideo = oriVideoPath, pathImageJpg = oriImgFile, isRGB = isRGB)
     timeend = time.time()
     print("cvtVideo2Img is done, using time: %d minutes", (timeend - timestart) / 60.0)
-    #--------------------------------------------------------------------------------------------------------#
-
     ##get croped hand region
-    only_hand_file = "/home/myc/liuzhipeng/Chalearn/ConG/data/validation/onli_hand/rgb_only_hand"
-    labelHD_depthFile = "/home/myc/liuzhipeng/Chalearn/ConG/data/validation/video/congSegValid_2017/labeld_handDetectionSegValid"
-    preprocess.blackNonHand(oriImgFile = oriRGBImgFile, detectionFile = labelHD_depthFile, saveFile = only_hand_file)
+    if isRGB == 1:##for RGB
+        only_hand_file = "data/train/only_hand/rgb"
+    else:
+        only_hand_file = "data/train/only_hand/depth"
+    checkPath(only_hand_file)
+    preprocess.blackNonHand(oriImgFile = oriImgFile, detectionFile = handDetectionFile, saveFile = only_hand_file)
     timeend = time.time()
     print("blackNonHand is done, using time: %d minutes", (timeend - timestart) / 60.0)
-    #--------------------------------------------------------------------------------------------------------#
     ##unify image to 32 frame
-    unifi_only_hand_file = "/home/myc/liuzhipeng/Chalearn/ConG/data/validation/only_hand/unifi_32/unifi_depth_map_only_hand"
+    if isRGB == 1:
+        unifi_only_hand_file = "data/train/unifi_only_hand_file/rgb"
+    else:
+        unifi_only_hand_file = "data/train/unifi_only_hand_file/depth"
+    checkPath(unifi_only_hand_file)
     preprocess.frameUnification(filepath = only_hand_file, savepath = unifi_only_hand_file)
     timeend = time.time()
-    print("frameUnification is done, using time: %d minutes", (timeend - timestart) / 60.0)
-    #--------------------------------------------------------------------------------------------------------#
-    ##get only hand and face
-    faceDetecionPath = "/home/myc/liuzhipeng/Chalearn/ConG/data/ConGFacePosition/ConGValidDataFacePosition/RGB"
-    only_hand_face_file = "/home/myc/liuzhipeng/Chalearn/ConG/data/validation/only_hand_face/rgb_only_hand_face"
-    preprocess.blackNonHandFace(oriImgFile = unifi_only_hand_file, faceDetecionPath = faceDetecionPath, saveFile = only_hand_face_file, isValid = 1)
+    print("frameUnification is done, using time: %d minutes", (timeend - timestart) / 60.0) 
+    ##get only hand and face for rgb
+    if isRGB == 1:
+        only_hand_face_file = "data/train/only_hand_face_file/rgb"
+        checkPath(only_hand_face_file)
+        preprocess.blackNonHandFace(oriImgFile = unifi_only_hand_file, faceDetecionPath = faceDetecionPath, saveFile = only_hand_face_file, isValid = 2)
+        timeend = time.time()
+        print("blackNonHandFace is done, using time: %d minutes", (timeend - timestart) / 60.0)
+    ####set input and output list file for c3d
+    listFile = "train_list_c3d"
+    checkPath(listFile)
+    if isRGB == 1:
+        c3d_img = only_hand_face_file
+        inputlist = listFile + "/c3d_input_train_rgb.txt"
+        outputlist = listFile + "/c3d_output_train_rgb.txt" 
+        pathC3Dfeature = "feature/train/rgb"
+    else:
+        c3d_img = unifi_only_hand_file
+        inputlist = listFile + "/c3d_input_train_depth.txt"
+        outputlist = listFile + "/c3d_output_train_depth.txt" 
+        pathC3Dfeature = "feature/train/depth"
+    checkPath(pathC3Dfeature)
+    preprocess.set_image_list(pathImageJpg = c3d_img, inputfilename = inputlist)
+    preprocess.set_c3d_output_list(pathImageJpg = c3d_img, pathC3Dfeature = pathC3Dfeature, outputfilename = outputlist)
     timeend = time.time()
-    print("blackNonHandFace is done, using time: %d minutes", (timeend - timestart) / 60.0)
-    #--------------------------------------------------------------------------------------------------------#
-    ##set input list file for c3d
-    inputlist = "/home/myc/liuzhipeng/Chalearn/process_data/list/conG/input/only_face_hand/validation/cong_va_only_face_hand_rgb_2streams.txt"
-    preprocess.set_image_list(pathImageJpg = only_hand_face_file, inputfilename = inputlist)
+    print("preprocessing continuous data is done, using time: %d minutes", (timeend - timestart) / 60.0)   
 
-    ##set output list file for c3d
-    outputlist = "/home/myc/liuzhipeng/Chalearn/process_data/list/conG/output/validation/only_hand_face/cong_va_only_hand_face_len_32_rgb_2streams_output_list.txt"
-    pathfeature = "/home/myc/liuzhipeng/Chalearn/ConG/feature/c3d_only_face_hand/validation/only_face_hand_rgb_2streams"
-    preprocess.set_c3d_output_list(pathImageJpg = only_hand_face_file, pathC3Dfeature = pathfeature, outputfilename = outputlist)
+def testMain(oriVideoPath = None, handDetectionFile = None, faceDetecionPath = None, isRGB = 1):
+    timestart = time.time()
+    preprocess = isoProcess()
+
+    ##convert labeled video to images
+    if isRGB == 1:
+        oriImgFile = "data/test/origianl_img/rgb"
+    else:
+        oriImgFile = "data/test/origianl_img/depth"
+    checkPath(oriImgFile)
+    preprocess.cvtVideo2Img(pathVideo = oriVideoPath, pathImageJpg = oriImgFile, isRGB = isRGB)
     timeend = time.time()
-    print("preprocessing isolated data is done, using time: %d minutes", (timeend - timestart) / 60.0)
+    print("cvtVideo2Img is done, using time: %d minutes", (timeend - timestart) / 60.0)
+    ##get croped hand region
+    if isRGB == 1:##for RGB
+        only_hand_file = "data/test/only_hand/rgb"
+    else:
+        only_hand_file = "data/test/only_hand/depth"
+    checkPath(only_hand_file)
+    preprocess.blackNonHand(oriImgFile = oriImgFile, detectionFile = handDetectionFile, saveFile = only_hand_file)
+    timeend = time.time()
+    print("blackNonHand is done, using time: %d minutes", (timeend - timestart) / 60.0)
+    ##unify image to 32 frame
+    if isRGB == 1:
+        unifi_only_hand_file = "data/test/unifi_only_hand_file/rgb"
+    else:
+        unifi_only_hand_file = "data/test/unifi_only_hand_file/depth"
+    checkPath(unifi_only_hand_file)
+    preprocess.frameUnification(filepath = only_hand_file, savepath = unifi_only_hand_file)
+    timeend = time.time()
+    print("frameUnification is done, using time: %d minutes", (timeend - timestart) / 60.0) 
+    ##get only hand and face for rgb
+    if isRGB == 1:
+        only_hand_face_file = "data/test/only_hand_face_file/rgb"
+        checkPath(only_hand_face_file)
+        preprocess.blackNonHandFace(oriImgFile = unifi_only_hand_file, faceDetecionPath = faceDetecionPath, saveFile = only_hand_face_file, isValid = 1)
+        timeend = time.time()
+        print("blackNonHandFace is done, using time: %d minutes", (timeend - timestart) / 60.0)
+    ####set input and output list file for c3d
+    listFile = "test_list_c3d"
+    checkPath(listFile)
+    if isRGB == 1:
+        c3d_img = only_hand_face_file
+        inputlist = listFile + "/c3d_input_test_rgb.txt"
+        outputlist = listFile + "/c3d_output_test_rgb.txt" 
+        pathC3Dfeature = "feature/test/rgb"
+    else:
+        c3d_img = unifi_only_hand_file
+        inputlist = listFile + "/c3d_input_test_depth.txt"
+        outputlist = listFile + "/c3d_output_test_depth.txt" 
+        pathC3Dfeature = "feature/test/depth"
+    checkPath(pathC3Dfeature)
+    preprocess.set_image_list(pathImageJpg = c3d_img, inputfilename = inputlist)
+    preprocess.set_c3d_output_list(pathImageJpg = c3d_img, pathC3Dfeature = pathC3Dfeature, outputfilename = outputlist)
+    timeend = time.time()
+    print("preprocessing isolated data is done, using time: %d minutes", (timeend - timestart) / 60.0)   
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--oriRGBVideoPath', default='IsoGD_phase_1', type=str, help = 'the path to rgb video file')
+    parser.add_argument('--oriDepthVideoPath', default='IsoGD_phase_1_aligned', type=str, help = 'the path to mapped depth video file')
+    parser.add_argument('--faceDetecionPath', default='IsoRGBTrainFaceDetect.txt', type=str, help = 'the path to face detection file')
+    parser.add_argument('--handDetectionFile', default='data/handDetection', type=str, help = 'the path to hand detection file')
+
+    parser.add_argument('--isRGB', default=1, type=int, help = 'the type of data set (RGB or depth)')
+    parser.add_argument('--isTrain', default=1, type=int, help = 'the type of data set (train or test)')
+    args = parser.parse_args()
+    if args.isTrain == 1:
+        if args.isRGB == 1:
+            print("preprocess training rgb video: ")
+            trainMain(oriVideoPath = args.oriRGBVideoPath, handDetectionFile = args.handDetectionFile, faceDetecionPath = args.faceDetecionPath, isRGB = args.isRGB)
+        else:
+            print("preprocess training mapped depth video: ")
+            trainMain(oriVideoPath = args.oriDepthVideoPath, handDetectionFile = args.handDetectionFile, faceDetecionPath = args.faceDetecionPath, isRGB = args.isRGB)
+    else:
+        if args.isRGB == 1:
+            print("preprocess testing rgb video: ")
+            testMain(oriVideoPath = args.oriRGBVideoPath, handDetectionFile = args.handDetectionFile, faceDetecionPath = args.faceDetecionPath, isRGB = args.isRGB)
+        else:
+            print("preprocess testing mapped depth video: ")
+            testMain(oriVideoPath = args.oriDepthVideoPath, handDetectionFile = args.handDetectionFile, faceDetecionPath = args.faceDetecionPath, isRGB = args.isRGB)        
+
