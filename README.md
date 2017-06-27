@@ -7,11 +7,11 @@ This is an implementaion of our method about ChaLearn LAP Large-scale Continuous
 This code was tested on Windows10 OS with VS2012 and Ubuntu 14.04 OS with Python 2.7, caffe-C3D, sklearn, faster-rcnn.
 Please double check the paths in code before your run it.
 
-## The Training:
+## Training:
 
 ### Step1: Convert continuous gesture to isolated gesture in order to train conveniently
 ```
-(1): set  the data_path in convertConGTrain2IsoGTrain_windows_matlab/ConvertConVedioToIsoGesture.m as your own path 
+(1): set the data_path in convertConGTrain2IsoGTrain_windows_matlab/ConvertConVedioToIsoGesture.m as your own path 
 (2): run convertConGTrain2IsoGTrain_windows_matlab/ConvertConVedioToIsoGesture.m
 ```
 ### Step2: Get face and hand detetion about continuous training dataset.
@@ -121,12 +121,10 @@ We have already uploaded the trained svm model in svm_model/.
 ### Step2: Run the code in validation_Tesing_temporal_segmentaion to get segmented video, hand detection and video length. (described in Step3 of Training)
 
 ### Step3: To preprocess the training dataset and get the input data and setting files for extacting c3d fc6 feature: 
-
 ```
 sh preprocessTestRGBData.sh 
 sh preprocessTestDepthData.sh  
 ```
-
 ### Step4: Extracte c3d fc6 feature like training Step5.
 
 ### Step5: Read and fuse extracted RGB and depth feature by running read_and_fuse_feature_ubuntu_matlab/mainTest.m
