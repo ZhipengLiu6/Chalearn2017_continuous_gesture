@@ -14,7 +14,7 @@ Please double check the paths in code before your run it.
 (1): set the data_path in convertConGTrain2IsoGTrain_windows_matlab/ConvertConVedioToIsoGesture.m as your own path 
 (2): run convertConGTrain2IsoGTrain_windows_matlab/ConvertConVedioToIsoGesture.m
 ```
-Then there will be a new file named convertContinousToIsoGestrueTrain, which contain all converted training dataset.
+Then there will be a new file named convertContinousToIsoGestrueTrain, which contains all converted training dataset.
 
 ### Step2: Get face and hand detetion about continuous training dataset.
 
