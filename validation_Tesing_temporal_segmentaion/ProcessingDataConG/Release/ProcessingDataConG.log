@@ -1,0 +1,32 @@
+﻿生成启动时间为 2016/7/20 11:00:21。
+     1>项目“F:\competition\ProcessingDataConG\ProcessingDataConG\ProcessingDataConG\ProcessingDataConG.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt connexe.cpp PreProcessGestureData.cpp ProcessingDataConG.cpp stdafx.cpp
+         connexe.cpp
+         PreProcessGestureData.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>f:\competition\processingdatacong\processingdatacong\include\opensource\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+     1>PreProcessGestureData.cpp(17): warning C4018: “<”: 有符号/无符号不匹配
+     1>PreProcessGestureData.cpp(21): warning C4018: “<”: 有符号/无符号不匹配
+         ProcessingDataConG.cpp
+     1>f:\competition\processingdatacong\processingdatacong\include\opensource\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : 参见“fopen”的声明
+         stdafx.cpp
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\competition\ProcessingDataConG\ProcessingDataConG\Release\ProcessingDataConG.exe" /INCREMENTAL:NO /NOLOGO opencv_calib3d242.lib opencv_contrib242.lib opencv_core242.lib opencv_features2d242.lib opencv_flann242.lib opencv_gpu242.lib opencv_highgui242.lib opencv_imgproc242.lib opencv_legacy242.lib opencv_ml242.lib opencv_objdetect242.lib opencv_ts242.lib opencv_video242.lib VIPL_SDK_FD_NODOG.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:"Nafxcw.lib Libcmt.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\competition\ProcessingDataConG\ProcessingDataConG\Release\ProcessingDataConG.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\competition\ProcessingDataConG\ProcessingDataConG\Release\ProcessingDataConG.lib" /MACHINE:X86 /SAFESEH Release\connexe.obj
+         Release\PreProcessGestureData.obj
+         Release\ProcessingDataConG.obj
+         Release\stdafx.obj
+         正在生成代码
+         已完成代码的生成
+     1>nafxcw.lib(afxmem.obj) : error LNK2005: "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z) 已经在 LIBCMT.lib(new.obj) 中定义
+     1>nafxcw.lib(afxmem.obj) : error LNK2005: "void __cdecl operator delete(void *)" (??3@YAXPAX@Z) 已经在 LIBCMT.lib(delete.obj) 中定义
+     1>nafxcw.lib(afxmem.obj) : error LNK2005: "void * __cdecl operator new[](unsigned int)" (??_U@YAPAXI@Z) 已经在 LIBCMT.lib(new2.obj) 中定义
+     1>nafxcw.lib(afxmem.obj) : error LNK2005: "void __cdecl operator delete[](void *)" (??_V@YAXPAX@Z) 已经在 LIBCMT.lib(delete2.obj) 中定义
+     1>F:\competition\ProcessingDataConG\ProcessingDataConG\Release\ProcessingDataConG.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
+     1>已完成生成项目“F:\competition\ProcessingDataConG\ProcessingDataConG\ProcessingDataConG\ProcessingDataConG.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:04.56

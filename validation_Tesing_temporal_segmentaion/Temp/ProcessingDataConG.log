@@ -1,0 +1,11 @@
+﻿生成启动时间为 2017/6/27 14:23:43。
+     1>项目“C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\temporal_segmentation\ProcessingDataConG\ProcessingDataConG.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>Link:
+         ProcessingDataConG.vcxproj -> C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\temporal_segmentation\\Bin\ProcessingDataConG.exe
+     1>已完成生成项目“C:\zhipeng\ICT_NHCI_ContinuousGestureCode\ConAllcodes\temporal_segmentation\ProcessingDataConG\ProcessingDataConG.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.08
