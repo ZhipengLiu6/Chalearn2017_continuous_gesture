@@ -5,11 +5,11 @@ This is an implementaion of our method about ChaLearn LAP Large-scale Continuous
 ## Notes: 
 
 This code was tested on Windows10 OS with VS2012 and Ubuntu 14.04 OS with Python 2.7, caffe-C3D, sklearn, faster-rcnn.
-Please double check the paths in code before your run it.
+Please double check the paths in code before you run it.
 
 ## Training:
 
-### Step1: Convert continuous gesture to isolated gesture in order to train conveniently
+### Step1: Convert continuous gestures to isolated gestures in order to train conveniently
 ```
 (1): set the data_path in convertConGTrain2IsoGTrain_windows_matlab/ConvertConVedioToIsoGesture.m as your own path 
 (2): run convertConGTrain2IsoGTrain_windows_matlab/ConvertConVedioToIsoGesture.m
@@ -137,10 +137,11 @@ cong/
         001/
         ...
 ```
-The ConGD_Phase_1_aligned file contains aligned  depth video. The ConGD_phase_1 file contains original RGB and depth video. The cong file contains correspoing hand detection results got from Step2.
+The ConGD_Phase_1_aligned file contains aligned  depth video. The ConGD_phase_1 file contains original RGB and depth video. The cong file contains correspoing hand detection results got from training Step2.  All generated temporal segmentation files are placed in validation_Tesing_temporal_segmentaion/output/. Place video length file in python/. Organize other segmented files  as the way of training step2.
 
 ### Step3: To preprocess the training dataset and get the input data and setting files for extacting c3d fc6 feature: 
 ```
+sh cvtConGSegTestFile2Labeled.sh
 sh preprocessTestRGBData.sh 
 sh preprocessTestDepthData.sh  
 ```
