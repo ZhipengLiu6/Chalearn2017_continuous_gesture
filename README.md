@@ -121,6 +121,23 @@ We have already uploaded the trained svm model in svm_model/.
 ### Step1: Get face and hand detecion about validation or testing dataset.
 
 ### Step2: Run the code in validation_Tesing_temporal_segmentaion to get segmented video, hand detection and video length. (described in Step3 of Training)
+The files in validation_Tesing_temporal_segmentaion/data/  shoule look like as follows:
+
+```
+ConGD_Phase_1_aligned/
+    --valid/
+        --001/
+        ...
+ConGD_phase_1/
+    --valid/
+        --001/
+        ...
+cong/
+    --valid/
+        001/
+        ...
+```
+The ConGD_Phase_1_aligned file contains aligned  depth video. The ConGD_phase_1 file contains original RGB and depth video. The cong file contains correspoing hand detection results got from Step2.
 
 ### Step3: To preprocess the training dataset and get the input data and setting files for extacting c3d fc6 feature: 
 ```
