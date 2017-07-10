@@ -36,6 +36,10 @@ for i = cur : NumOriVedio
      DepthVedioPath = [data_path '\' strIDDevel '\' strIDVedio '.K.avi'];
      [M0, fps] = read_movie(VedioPath); 
      [K0, fps] = read_movie(DepthVedioPath);
+     if(size(M0, 2) ~= ConGesture(2, size(ConGesture, 2)))
+         sprintf('id-%d is wrong', i)
+         continue;
+     end
      for j = 1 : NumGesture
          fprintf('%d/%d\n', j, NumGesture);
          label = ConGesture(3, j);%label of gesture
@@ -71,7 +75,7 @@ end
 end
 
 function frames2Video(vedioPath,allframe)
-myObj = VideoWriter(vedioPath);%��ʼ��һ��avi�ļ�
+myObj = VideoWriter(vedioPath);%³õÊ¼»¯Ò»¸öaviÎÄ¼þ
 myObj.FrameRate = 10;
 if exist(vedioPath)
     return 
